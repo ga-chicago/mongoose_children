@@ -7,7 +7,6 @@ mongoose.connection.on('connected', function() {
   console.log('Das fake blog is publishing propaganda!');
 });
 
-
 mongoose.connection.on('error', function(err) {
   console.log(err);
 });

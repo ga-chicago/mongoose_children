@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 
-
 // only would get saved when parent gets saved
 // must be declared prior to parent due to...
 // HOISTING
@@ -17,8 +16,6 @@ var ArticleSchema = new mongoose.Schema({
   content: 'string',
   children: [CommentSchema]
 });
-
-
 
 // export both as endpoints!
 module.exports.Article = mongoose.model('Article', ArticleSchema);
